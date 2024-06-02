@@ -10,7 +10,6 @@ class Main{
                 if(board[i][j]=='.'){
                     for(char c='1';c<='9';c++){
                         if(isOkay(board,i,j,c)){
-                            System.out.println(i+" "+j+" "+c);
                             board[i][j]=c;
                             if(check(board)){
                                 return true;
